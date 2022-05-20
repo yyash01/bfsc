@@ -90,7 +90,7 @@ contract Land {
 
     //-----------------------------------------------govtBody-----------------------------------------------
 
-    function addGovtBody(uint id, address _addr,string memory _dpeartment) public returns(bool){
+    function addGovtBody(address _addr,string memory _dpeartment) public returns(bool){
         if(contractOwner!=msg.sender)
             return false;
         require(contractOwner==msg.sender);
